@@ -4,15 +4,8 @@ open NUnit.Framework
 open FsUnit
 open FSharpWrapper.Library
 
-type LightBulb(state) =
-   member x.On = state
-   override x.ToString() =
-       match x.On with
-       | true  -> "On"
-       | false -> "Off"
-
 [<TestFixture>] 
-type ``Given a LightBulb that has had its state set to true`` ()=
+type ``Word Wrapper Should`` ()=
    let wrapper = new Wrapper()
 
    [<Test>] member test.
