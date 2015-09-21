@@ -6,3 +6,9 @@ open FSharpWrapper.Library
 
 // Define your library scripting code here
 
+"abcde".ToCharArray()  
+|> Seq.map(fun ch -> ch.ToString() + "\n")
+|> Seq.reduce (fun acc x -> acc + x)
+
+
+"".ToCharArray()
